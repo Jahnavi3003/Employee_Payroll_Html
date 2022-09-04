@@ -79,7 +79,7 @@ label {
     font-size: larger;
 }
 .text {
-    font-size: 8px;
+    font-size: 16px;
     color: black;
     opacity: 1;
     font-family: Roboto;
@@ -153,9 +153,19 @@ button {
     text-align: center;
     color: black;
 }
-@media screen and (max-width: 857px) {
-    .submitButton {
+@media only screen and (max-width: 960px) {
+    .cancelButton {
         background-color: green;
-        margin-right: 26px;
+        margin-left: 0px;
+    }
+    .form {
+        width:85%;
+        padding: 44px 20px 
     }
 } 
+.text-error{
+    color: red;
+}
+#error-date{
+    color: red;
+}
