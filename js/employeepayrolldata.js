@@ -76,4 +76,20 @@ class EmployeePayrollData {
         }
     }
     
+    toString() {
+        const option = { day: "numeric", month: "short", year: "numeric" };
+        const empDate = !this.startDate ?
+            "undefined" :
+            this.startDate.toLocaleDateString("en-GB", option);
+        return (
+            "id=" + this.id +
+            ",name= '" + this.name +
+            ",gender= '" + this.gender +
+            ",profilePic= '" + this.profilePic +
+            ",department=" + this.department +
+            ",salary=" + this.salary +
+            ",startDate=" + empDate +
+            ",note=" + this.note
+        );
+}
 }
